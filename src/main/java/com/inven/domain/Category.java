@@ -17,6 +17,7 @@ public class Category {
     private Long id;
 
     private String name;
+
     @ManyToMany
     @JoinTable(name = "category_item",
             joinColumns = @JoinColumn(name = "category_id"),
