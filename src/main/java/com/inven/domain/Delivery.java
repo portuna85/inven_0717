@@ -15,7 +15,7 @@ public class Delivery {
     @Id
     @GeneratedValue
     @Column(name = "delivery_id")
-    private Long id;
+    private Long idx;
 
     @OneToOne(mappedBy = "delivery", fetch = LAZY)
     private Order order;

@@ -16,7 +16,7 @@ import static javax.persistence.FetchType.*;
 public class Order {
     @Id @GeneratedValue
     @Column(name = "order_id")
-    private Long id;
+    private Long idx;
 
     @ManyToOne(fetch = LAZY)
     @JoinColumn(name = "member_id")
