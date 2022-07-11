@@ -12,7 +12,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class MemberRepository {
 
-    @PersistenceContext
     private final EntityManager em;
 
     // 회원 등록
