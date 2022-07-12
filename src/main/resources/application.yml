@@ -1,12 +1,16 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://freelec-springboot2-webservice.cih7uhogpjdw.ap-northeast-2.rds.amazonaws.com:3306/inven?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
-    username: root
-    password: Gkstmvns1!
+    # driver-class-name: com.mysql.cj.jdbc.Driver
+    # url: jdbc:mysql://freelec-springboot2-webservice.cih7uhogpjdw.ap-northeast-2.rds.amazonaws.com:3306/inven?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    # username: root
+    # password: Gkstmvns1!
+    url: jdbc:h2:tcp://localhost/~/inven
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
     properties:
       hibernate:
         # show-sql: true
