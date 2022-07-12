@@ -47,8 +47,13 @@ public class ItemController {
         return "items/itemList";
     }
 
+
+    /**
+     * 상품 수정
+     */
     @GetMapping(value = "/items/{itemId}/edit")
     public String updateItemForm(@PathVariable("itemId") Long itemId, Model model) {
+
         Book item = (Book) itemService.findOne(itemId);
         BookForm form = new BookForm();
         form.setId(item.getId());
@@ -61,10 +66,7 @@ public class ItemController {
         return "items/updateItemForm";
     }
 
-    /**
-     * 상품 수정
-     */
-    @PostMapping(value = "/items/{itemId}/edit")
+    @PostMapping("items/{itemId}/edit")
     public String updateItem(@PathVariable Long itemId, @ModelAttribute("form") BookForm form) {
 
         itemService.updateItem(itemId, form.getName(), form.getPrice(), form.getStockQuantity());
