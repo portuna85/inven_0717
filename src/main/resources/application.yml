@@ -1,26 +1,6 @@
 spring:
-  datasource:
-    # driver-class-name: com.mysql.cj.jdbc.Driver
-    # url: jdbc:mysql://freelec-springboot2-webservice.cih7uhogpjdw.ap-northeast-2.rds.amazonaws.com:3306/inven?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
-    # username: root
-    # password: Gkstmvns1!
-    url: jdbc:h2:tcp://localhost/~/inven
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
   jpa:
-    hibernate:
-      ddl-auto: none
+    show-sql: true
     properties:
       hibernate:
-        # show-sql: true
-        format_sql: true
-    open-in-view: false
-  thymeleaf:
-    prefix: classpath:/templates/
-    suffix: .html
-
-logging:
-  level:
-    org.hibernate.SQL: debug
-    org.hibernate.type: trace
+        dialect: org.hibernate.dialect.MySQL8Dialect

@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    include: real-db
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
