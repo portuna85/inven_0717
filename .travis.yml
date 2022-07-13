@@ -40,7 +40,7 @@ deploy:
     key: inven.zip
     bundle_type: zip
     application: inven
-    depolyment_group: inven-group
+    deployment_group: inven-group
     region: ap-northeast-2
     wait-until-deployed: true
 
