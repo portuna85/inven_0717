@@ -6,4 +6,4 @@
 /out/test/classes/
 .idea
 .gitignore
-application-real-db.yml
+application-real-db.properties
