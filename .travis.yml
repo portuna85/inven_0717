@@ -18,7 +18,7 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r inven*
+  - zip -r inven *
   - mkdir -p deploy
   - mv inven.zip deploy/inven.zip
 
