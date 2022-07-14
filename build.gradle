@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'com.inven'
-version '1.0-SNAPSHOT' + new Date().format("yyyy-MM-dd-HH")
+version '1.0.1-SNAPSHOT' + new Date().format("yyyy-MM-dd-HH")
 sourceCompatibility = '11'
 
 
