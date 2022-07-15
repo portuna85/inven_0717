@@ -14,11 +14,12 @@ public class Member {
     @Id
     @GeneratedValue
     @Column(name = "member_id")
-    private Long idx;
+    private Long id;
 
     @Column(name = "name")
     private String username;
 
+    @Column(name = "password")
     private String password;
 
     @Embedded
